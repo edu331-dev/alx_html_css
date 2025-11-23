@@ -1,19 +1,167 @@
-/* styles.css - SmileSchool Stylesheet */
-
-/* Add your styles here */
 /* ===========================
    styles.css - SmileSchool 
    =========================== */
 
 /* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-/* Typography */
-
-/* Layout */
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #ffffff;
+}
 
 /* Header */
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    padding: 35px 0;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 100px;
+}
+
+header nav img {
+    width: 167px;
+    height: auto;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    gap: 60px;
+}
+
+header nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: 0.5px;
+    transition: opacity 0.3s;
+}
+
+header nav ul li a:hover {
+    opacity: 0.9;
+}
 
 /* Banner Section */
+main section:first-child {
+    background-image: radial-gradient(85.9% 85.9% at 50% 14.1%, rgba(41, 48, 61, 0.0001) 0%, #071629 100%), url('images/background.png');
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    padding: 180px 100px 120px;
+    text-align: center;
+}
+
+main section:first-child > div:first-child {
+    max-width: 1000px;
+    margin: 0 auto 100px;
+}
+
+main section:first-child h1 {
+    font-weight: 700;
+    font-size: 120px;
+    line-height: 151px;
+    margin-bottom: 0;
+    color: #ffffff;
+}
+
+main section:first-child > div:first-child span {
+    font-weight: 700;
+    font-size: 16px;
+    margin: 0 40px;
+    color: #ffffff;
+    display: inline-block;
+}
+
+main section:first-child button {
+    background: linear-gradient(224.93deg, #C271FF 0%, #C271FF 100%);
+    border-radius: 22px;
+    border: none;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 13px 30px;
+    margin-top: 38px;
+    cursor: pointer;
+    box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.5);
+    transition: opacity 0.3s;
+    text-transform: uppercase;
+}
+
+main section:first-child button:hover {
+    opacity: 0.9;
+}
+
+/* Learn from the pros */
+main section:first-child > div:nth-child(2) {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+main section:first-child > div:nth-child(2) h2 {
+    font-weight: 300;
+    font-size: 32px;
+    margin-bottom: 100px;
+    line-height: 40px;
+}
+
+main section:first-child > div:nth-child(2) h2::before {
+    content: 'Learn';
+    font-weight: 700;
+    color: #C271FF;
+    margin-right: 8px;
+}
+
+main section:first-child > div:nth-child(2) > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 50px;
+}
+
+main section:first-child > div:nth-child(2) > div > div {
+    flex: 1;
+    max-width: 150px;
+    text-align: center;
+}
+
+main section:first-child > div:nth-child(2) > div > div img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 8px;
+}
+
+main section:first-child > div:nth-child(2) > div > div h3 {
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 27px;
+    margin-bottom: 3px;
+}
+
+main section:first-child > div:nth-child(2) > div > div p {
+    font-weight: 400;
+    font-size: 16px;
+    font-style: italic;
+    line-height: 24px;
+    color: #ffffff;
+}
 
 /* Quote Section */
 
