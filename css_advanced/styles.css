@@ -430,6 +430,55 @@ main section:nth-child(4) button:hover {
 }
 
 /* FAQ Section */
+main section:nth-child(5) {
+    background: #ffffff;
+    padding: 80px 100px;
+}
+
+main section:nth-child(5) h2 {
+    font-weight: 300;
+    font-size: 60px;
+    line-height: 75px;
+    text-align: center;
+    color: #071629;
+    margin-bottom: 60px;
+}
+
+main section:nth-child(5) > div {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    gap: 80px;
+}
+
+/* FAQ Column */
+main section:nth-child(5) > div > div {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+/* FAQ Item */
+main section:nth-child(5) > div > div > div {
+    display: flex;
+    flex-direction: column;
+}
+
+main section:nth-child(5) > div > div > div > div:first-child h3 {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: #071629;
+    margin-bottom: 15px;
+}
+
+main section:nth-child(5) > div > div > div > div:last-child {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: rgba(7, 22, 41, 0.5);
+}
 
 /* Footer */
 
