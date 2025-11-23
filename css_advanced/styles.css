@@ -217,6 +217,141 @@ main section:nth-child(2) p {
 }
 
 /* Videos Section */
+main section:nth-child(3) {
+    background: #ffffff;
+    padding: 80px 100px;
+}
+
+main section:nth-child(3) h2 {
+    font-weight: 300;
+    font-size: 32px;
+    line-height: 40px;
+    text-align: center;
+    color: #071629;
+    margin-bottom: 80px;
+}
+
+main section:nth-child(3) h2::before {
+    content: 'Most ';
+    font-weight: 300;
+    color: #071629;
+}
+
+main section:nth-child(3) h2::after {
+    content: 'popular';
+    font-weight: 700;
+    color: #C271FF;
+    margin: 0 8px;
+}
+
+main section:nth-child(3) > div {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+/* Video Card */
+main section:nth-child(3) > div > div {
+    background: #ffffff;
+}
+
+main section:nth-child(3) > div > div > img:first-child {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+/* Play button overlay */
+main section:nth-child(3) > div > div > img:first-child {
+    position: relative;
+    display: block;
+}
+
+main section:nth-child(3) > div > div {
+    position: relative;
+}
+
+main section:nth-child(3) > div > div::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -80%);
+    width: 64px;
+    height: 64px;
+    background-image: url('images/play.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    pointer-events: none;
+    z-index: 1;
+}
+
+main section:nth-child(3) > div > div h3 {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: #071629;
+    margin-bottom: 8px;
+}
+
+main section:nth-child(3) > div > div > p:first-of-type {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: rgba(7, 22, 41, 0.5);
+    margin-bottom: 15px;
+}
+
+/* Author info */
+main section:nth-child(3) > div > div > div:nth-of-type(1) {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+main section:nth-child(3) > div > div > div:nth-of-type(1) img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+main section:nth-child(3) > div > div > div:nth-of-type(1) h4 {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    color: #C271FF;
+}
+
+/* Rating and duration */
+main section:nth-child(3) > div > div > div:nth-of-type(2) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main section:nth-child(3) > div > div > div:nth-of-type(2) > div:first-child {
+    display: flex;
+    gap: 5px;
+}
+
+main section:nth-child(3) > div > div > div:nth-of-type(2) i {
+    color: #C271FF;
+    font-size: 15px;
+}
+
+main section:nth-child(3) > div > div > p:last-child {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    color: #C271FF;
+}
 
 /* Membership Section */
 
