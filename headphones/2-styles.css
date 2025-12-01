@@ -1,0 +1,440 @@
+/* Custom Font Icons */
+@font-face {
+    font-family: 'holberton_school-icon';
+    src: url('fonts/holberton_school-icon.eot?sq4eq4');
+    src: url('fonts/holberton_school-icon.eot?sq4eq4#iefix') format('embedded-opentype'),
+        url('fonts/holberton_school-icon.ttf?sq4eq4') format('truetype'),
+        url('fonts/holberton_school-icon.woff?sq4eq4') format('woff'),
+        url('fonts/holberton_school-icon.svg?sq4eq4#holberton_school-icon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+[class^="holberton_school-icon-"],
+[class*=" holberton_school-icon-"] {
+    font-family: 'holberton_school-icon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.holberton_school-icon-ic_sound:before {
+    content: "\e90e";
+}
+
+.holberton_school-icon-ic_video:before {
+    content: "\e910";
+}
+
+.holberton_school-icon-ic_music:before {
+    content: "\e90d";
+}
+
+.holberton_school-icon-ic_hearing:before {
+    content: "\e909";
+}
+
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* CSS Variables */
+:root {
+    --color-primary: #FF6565;
+    --color-white: #FFFFFF;
+    --color-dark: #071629;
+    --color-text: #333333;
+    --font-family: 'Source Sans Pro', sans-serif;
+    --max-width: 1000px;
+    --transition: all 0.3s ease;
+}
+
+/* Base Styles */
+body {
+    font-family: var(--font-family);
+    color: var(--color-text);
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-white);
+    transition: var(--transition);
+}
+
+a:hover {
+    color: var(--color-primary);
+}
+
+/* Container */
+.container {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header Section */
+.header {
+    background-image: url('headphones_hero_1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    position: relative;
+}
+
+.header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(7, 22, 41, 0.5);
+    z-index: 0;
+}
+
+.header .container {
+    position: relative;
+    z-index: 1;
+}
+
+/* Navigation */
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
+}
+
+.nav-logo img {
+    height: 32px;
+    width: auto;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 40px;
+}
+
+.nav-menu a {
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: lowercase;
+    color: var(--color-white);
+}
+
+.nav-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+}
+
+.nav-toggle span {
+    width: 25px;
+    height: 3px;
+    background-color: var(--color-white);
+    transition: var(--transition);
+}
+
+/* Hero Content */
+.hero-content {
+    text-align: center;
+    padding: 250px 0 100px;
+    color: var(--color-white);
+}
+
+.hero-content h1 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    line-height: 1.2;
+}
+
+.hero-subtitle {
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 40px;
+}
+
+.btn-cta {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    border: none;
+    padding: 15px 30px;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: var(--transition);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.btn-cta:hover {
+    opacity: 0.9;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+}
+
+.hero-description {
+    max-width: 650px;
+    margin: 60px auto 0;
+    font-size: 16px;
+    line-height: 1.8;
+    font-weight: 400;
+}
+
+/* Section Styles - Generic */
+.section {
+    padding: 100px 0;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 40px;
+    color: var(--color-dark);
+}
+
+.section-description {
+    max-width: 650px;
+    margin: 0 auto 80px;
+    font-size: 16px;
+    line-height: 1.8;
+    color: var(--color-text);
+}
+
+/* Dark Section Variant */
+.section-dark {
+    background-image: url('headphones_hero_2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.section-dark::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(7, 22, 41, 0.7);
+    z-index: 0;
+}
+
+.section-dark .container {
+    position: relative;
+    z-index: 1;
+}
+
+.section-dark .section-title,
+.section-dark .section-description,
+.section-dark .service-text {
+    color: var(--color-white);
+}
+
+/* Services Grid - Generic Component */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 60px 40px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.service-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.service-icon {
+    font-size: 94px;
+    color: var(--color-primary);
+    margin-bottom: 20px;
+    display: block;
+}
+
+.service-title {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: var(--color-dark);
+}
+
+.service-text {
+    font-size: 14px;
+    line-height: 1.8;
+    color: var(--color-text);
+}
+
+/* Results Items - Reusing service-item component */
+.result-item {
+    position: relative;
+}
+
+.result-icon {
+    width: 190px;
+    height: 190px;
+    margin: 0 auto 25px;
+    background-image: url('pentagone.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.result-number {
+    font-size: 46px;
+    font-weight: 700;
+    color: var(--color-white);
+}
+
+/* Responsive Design - Tablet */
+@media (max-width: 768px) {
+    .nav-menu {
+        gap: 30px;
+    }
+
+    .hero-content {
+        padding: 200px 0 80px;
+    }
+
+    .hero-content h1 {
+        font-size: 28px;
+    }
+
+    .hero-description {
+        font-size: 15px;
+    }
+
+    .section {
+        padding: 80px 0;
+    }
+
+    .section-title {
+        font-size: 28px;
+    }
+
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 50px 30px;
+    }
+
+    .result-icon {
+        width: 170px;
+        height: 170px;
+    }
+
+    .result-number {
+        font-size: 40px;
+    }
+}
+
+/* Responsive Design - Mobile */
+@media (max-width: 480px) {
+    .nav {
+        padding: 20px 0;
+    }
+
+    .nav-menu {
+        display: none;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        background-color: rgba(7, 22, 41, 0.95);
+        padding: 20px;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .nav-menu.active {
+        display: flex;
+    }
+
+    .nav-toggle {
+        display: flex;
+    }
+
+    .hero-content {
+        padding: 150px 0 60px;
+    }
+
+    .hero-content h1 {
+        font-size: 24px;
+    }
+
+    .hero-subtitle {
+        font-size: 14px;
+    }
+
+    .hero-description {
+        font-size: 14px;
+        margin-top: 40px;
+    }
+
+    .btn-cta {
+        padding: 12px 25px;
+        font-size: 13px;
+    }
+
+    .section {
+        padding: 60px 0;
+    }
+
+    .section-title {
+        font-size: 24px;
+        margin-bottom: 30px;
+    }
+
+    .section-description {
+        font-size: 14px;
+        margin-bottom: 60px;
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr;
+        gap: 60px;
+    }
+
+    .service-icon {
+        font-size: 80px;
+    }
+
+    .service-title {
+        font-size: 16px;
+    }
+
+    .service-text {
+        font-size: 13px;
+    }
+
+    .result-icon {
+        width: 150px;
+        height: 150px;
+    }
+
+    .result-number {
+        font-size: 36px;
+    }
+}
